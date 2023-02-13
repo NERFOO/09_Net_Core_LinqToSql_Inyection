@@ -1,0 +1,28 @@
+﻿@model IDoctor
+
+
+<h1>Doctores</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Hospital Cod</th>
+            <th>Num Doctor</th>
+            <th>Apellido</th>
+            <th>Especialidad</th>
+            <th>Saalrio</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(Doctor doctor in Model.GetDoctores())
+        {
+            <tr>
+                <td>@doctor.HospitalCod</td>
+                <td>@doctor.DoctorNum</td>
+                <td>@doctor.Apellido</td>
+                <td>@doctor.Especialidad</td>
+                <td>@doctor.Salario</td>
+            </tr>
+        }
+    </tbody>
+</table>
