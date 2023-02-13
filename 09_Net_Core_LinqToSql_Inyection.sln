@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_Net_Core_LinqToSql_Inyection", "09_Net_Core_LinqToSql_Inyection\09_Net_Core_LinqToSql_Inyection.csproj", "{3E43B216-600F-43F2-8237-15DDD1C63755}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E43B216-600F-43F2-8237-15DDD1C63755}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E43B216-600F-43F2-8237-15DDD1C63755}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E43B216-600F-43F2-8237-15DDD1C63755}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E43B216-600F-43F2-8237-15DDD1C63755}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {10D336D7-18D7-4C36-9DF5-AB9C2A03AFC8}
+	EndGlobalSection
+EndGlobal
