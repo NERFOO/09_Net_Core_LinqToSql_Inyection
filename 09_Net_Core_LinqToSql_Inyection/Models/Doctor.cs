@@ -14,7 +14,8 @@ namespace _09_Net_Core_LinqToSql_Inyection.Models
 
         public List<Doctor> GetDoctores()
         {
-            return this.repo.GetDoctores();
+            List<Doctor> doctores = this.repo.GetDoctores();
+            return doctores;
         }
     }
 }

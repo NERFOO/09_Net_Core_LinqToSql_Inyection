@@ -16,6 +16,8 @@ car.Velocidad = 0;
 car.VelocidadMaxima = 265;
 builder.Services.AddTransient<ICoche, Coche>(x => car);
 
+builder.Services.AddTransient<IDoctor, Doctor>();
+
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
