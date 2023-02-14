@@ -4,5 +4,6 @@
     {
         List<Doctor> GetDoctores();
         void InsertarDoctor(string hospitalcod, string doctornum, string apellido, string especialidad, int salario);
+        void InsertarDoctor(string hospitalcod, string apellido, string especialidad, int salario);
     }
 }

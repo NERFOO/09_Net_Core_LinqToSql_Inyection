@@ -57,22 +57,31 @@ namespace _09_Net_Core_LinqToSql_Inyection.Repositories
         public void InsertarDoctor(string hospitalcod, string doctornum, string apellido, string especialidad, int salario)
         {
             string sql = "INSERT INTO DOCTOR VALUES (@hospitalcod, @doctornum, @apellido, @especialidad, @salario)";
+
             SqlParameter pamhos = new SqlParameter("@HOSPITALCOD", hospitalcod);
-            this.command.Parameters.Add(pamhos);
             SqlParameter pamdoc = new SqlParameter("@DOCTORNUM", doctornum);
-            this.command.Parameters.Add(pamdoc);
             SqlParameter pamape = new SqlParameter("@APELLIDO", apellido);
-            this.command.Parameters.Add(pamape);
             SqlParameter pamespe = new SqlParameter("@ESPECIALIDAD", especialidad);
-            this.command.Parameters.Add(pamespe);
             SqlParameter pamsalar = new SqlParameter("@SALARIO", salario);
+            this.command.Parameters.Add(pamhos);
+            this.command.Parameters.Add(pamdoc);
+            this.command.Parameters.Add(pamape);
+            this.command.Parameters.Add(pamespe);
             this.command.Parameters.Add(pamsalar);
+
             this.command.CommandType = CommandType.Text;
             this.command.CommandText = sql;
+
             this.connection.Open();
             this.command.ExecuteNonQuery();
+
             this.connection.Close();
             this.command.Parameters.Clear();
+        }
+
+        public void InsertarDoctor(string hospitalcod, string apellido, string especialidad, int salario)
+        {
+            throw new NotImplementedException();
         }
     }
 }

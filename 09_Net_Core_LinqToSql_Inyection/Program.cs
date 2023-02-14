@@ -17,7 +17,7 @@ car.Velocidad = 0;
 car.VelocidadMaxima = 265;
 builder.Services.AddTransient<ICoche, Coche>(x => car);
 
-builder.Services.AddTransient<IRepositoryDoctor, RepositoryDoctores>();
+builder.Services.AddTransient<IRepositoryDoctor, RepositoryDoctoresOracle>();
 
 builder.Services.AddControllersWithViews();
 
