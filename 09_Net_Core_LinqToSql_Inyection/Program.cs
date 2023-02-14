@@ -1,4 +1,5 @@
 using _09_Net_Core_LinqToSql_Inyection.Models;
+using _09_Net_Core_LinqToSql_Inyection.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,7 +17,7 @@ car.Velocidad = 0;
 car.VelocidadMaxima = 265;
 builder.Services.AddTransient<ICoche, Coche>(x => car);
 
-builder.Services.AddTransient<IDoctor, Doctor>();
+builder.Services.AddTransient<IRepositoryDoctor, RepositoryDoctores>();
 
 builder.Services.AddControllersWithViews();
 

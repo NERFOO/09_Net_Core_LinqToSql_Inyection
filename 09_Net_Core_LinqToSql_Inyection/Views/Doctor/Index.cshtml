@@ -1,9 +1,9 @@
-﻿@model IDoctor
+﻿@model List<Doctor>
 
 
 <h1>Doctores</h1>
 
-<table>
+<table class="table table-striped">
     <thead>
         <tr>
             <th>Hospital Cod</th>
@@ -14,7 +14,7 @@
         </tr>
     </thead>
     <tbody>
-        @foreach(Doctor doctor in Model.GetDoctores())
+        @foreach(Doctor doctor in Model)
         {
             <tr>
                 <td>@doctor.HospitalCod</td>
